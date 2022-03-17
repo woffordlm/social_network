@@ -1,0 +1,25 @@
+{
+  "name": "nosql_social_network_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woffordlm/nosql_social_network_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woffordlm/nosql_social_network_api/issues"
+  },
+  "homepage": "https://github.com/woffordlm/nosql_social_network_api#readme",
+  "dependencies": {
+    "date-fns": "^2.28.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7"
+  }
+}
