@@ -1,7 +1,7 @@
 
-const Users = require("./Users");
-const Thoughts = require("./Thoughts");
-const Reactions = require("./Reactions");
-const Friends = require("./Friends");
+const Users = require("./User");
+const Thoughts = require("./Thought");
+const Reactions = require("./Reaction");
+const Friends = require("./Friend");
 
 module.export= {Users, Thoughts, Reactions, Friends}
