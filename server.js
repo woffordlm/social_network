@@ -1,10 +1,6 @@
 const express = require("express");
-const mongoose = reguire("mongoose");
-const format = require('date-fns/format');
-// const stPattysDay = new Date('2020/03/17');
-// const formattedDate1 = format(stPattysDay, 'MM/dd/yyyy');
-
-
+const mongoose = require("mongoose");
+// const format = require('date-fns/format');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -13,7 +9,8 @@ const PORT = process.env.PORT || 3001;
  app.use(express.urlencoded({extended:true}));
  app.use(express.static("public"));
 
- mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/nosql_social_network_api' {
+
+ mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/social_network', {
     useNewUrlParser: true,
     useUnifiedTopology: true    
  });
@@ -22,6 +19,7 @@ const PORT = process.env.PORT || 3001;
  // Use this to log mongo queries being executed!
 mongoose.set('debug', true);
 
+ 
 app.use(require('./routes'));
 
 app.listen(PORT, () => console.log(`🌍 Connected on localhost:${PORT}`));
