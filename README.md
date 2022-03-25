@@ -22,7 +22,7 @@ The following pictures shows the get /api/thoughts route:
 
 THe following video displays showcases put, delete, and post routes for both the user and thought models. 
 
-[Video Demo](https://www.youtube.com/watch?v=SFVUS8uO39A)
+[Video Demo](https://youtu.be/O09MmnnhFHg)
 
 ## Created
 
